@@ -94,7 +94,6 @@ public class CalculoTriangulo3D {
         System.out.printf("  RESULTADO FINAL: Área do triângulo = %.4f\n", areaTriangulo);
         System.out.println("=========================================================");
 
-        scanner.close(); // Fecha o scanner ao final — boa prática para liberar recursos
     }
     static void aguardarEnter(Scanner scanner, String mensagem) {
         System.out.println(mensagem);
