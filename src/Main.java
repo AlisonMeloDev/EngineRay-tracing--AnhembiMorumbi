@@ -7,14 +7,16 @@ public class Main {
         int opcao = -1;
 
         while (opcao != 0) {
-            System.out.println("\n========================================");
-            System.out.println("          MENU PRINCIPAL - A3           ");
-            System.out.println("========================================");
+            System.out.println("\n╔══════════════════════════════════════════╗");
+            System.out.println("║         MENU PRINCIPAL - A3              ║");
+            System.out.println("╚══════════════════════════════════════════╝");
             System.out.println("1 - Parte 1: Sistemas Lineares (Exato ou Iterativo)");
             System.out.println("2 - Parte 2: Raízes (Método da Bisseção)");
             System.out.println("3 - Parte 3: Geometria (Cálculo Triângulo 3D)");
             System.out.println("4 - Parte 4: Cálculo Numérico (Derivação e Integração)");
             System.out.println("5 - Parte 5: Interpolação (Lagrange)");
+            System.out.println("6 - Calculadora metodo exato ");
+            System.out.println("7 - Calculadora metodo iterativo ");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
 
@@ -48,11 +50,19 @@ public class Main {
                     System.out.println("\n>>> Executando Parte 5 - Interpolação de Lagrange...");
                     InterpolacaoLagrange.main(null);
                     break;
+                case 6:
+                    System.out.println("\n>>> Executando calculadora Exato...");
+                    CalculadoraExato.main(null);
+                    break;
+                case 7:
+                    System.out.println("\n>>> Executando calculadora Iterativa...");
+                    CalculadoraIterativo.main(null);
+                    break;
                 case 0:
                     System.out.println("\nEncerrando o programa...");
                     break;
                 default:
-                    System.out.println("\nOpção inválida! Escolha um número de 0 a 5.");
+                    System.out.println("\nOpção inválida! Escolha um número de 0 a 7.");
             }
         }
     }
