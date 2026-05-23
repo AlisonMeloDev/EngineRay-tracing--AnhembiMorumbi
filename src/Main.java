@@ -12,8 +12,8 @@ public class Main {
             System.out.println("╚══════════════════════════════════════════╝");
             System.out.println("1 - Parte 1: Sistemas Lineares (Exato ou Iterativo)");
             System.out.println("2 - Parte 2: Raízes (Método da Bisseção)");
-            System.out.println("3 - Parte 3: Geometria (Cálculo Triângulo 3D)");
-            System.out.println("4 - Parte 4: Cálculo Numérico (Derivação e Integração)");
+            System.out.println("3 - Parte 3: Cálculo Numérico (Derivação e Integração)");
+            System.out.println("4 - Parte 4: Geometria (Cálculo Triângulo 3D)");
             System.out.println("5 - Parte 5: Interpolação (Lagrange)");
             System.out.println("6 - Calculadora metodo exato ");
             System.out.println("7 - Calculadora metodo iterativo ");
@@ -38,14 +38,17 @@ public class Main {
                     System.out.println("\n>>> Executando Parte 2 - Método da Bisseção...");
                     MetodoBissecao.main(null);
                     break;
+
                 case 3:
-                    System.out.println("\n>>> Executando Parte 3 - Cálculo Triângulo 3D...");
-                    CalculoTriangulo3D.main(null);
-                    break;
-                case 4:
-                    System.out.println("\n>>> Executando Parte 4 - Derivação e Integração...");
+                    System.out.println("\n>>> Executando Parte 3 - Derivação e Integração...");
                     DerivacaoIntegracao.main(null);
                     break;
+
+                case 4:
+                    System.out.println("\n>>> Executando Parte 4 - Cálculo Triângulo 3D...");
+                    CalculoTriangulo3D.main(null);
+                    break;
+
                 case 5:
                     System.out.println("\n>>> Executando Parte 5 - Interpolação de Lagrange...");
                     InterpolacaoLagrange.main(null);
